@@ -1,0 +1,1 @@
+window.Grades={average(g){return ((+g.d1||0)+(+g.d2||0)+2*(+g.compo||0))/4},forStudent(data,mat){return data.grades.filter(g=>g.student===mat)}};

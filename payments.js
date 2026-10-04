@@ -1,0 +1,1 @@
+window.Payments={due(s,data){const paid=data.payments.filter(p=>p.student===s.matricule).reduce((n,p)=>n+p.amount,0);return Math.max(0,s.fee-paid)},add(data,p){data.payments.push({id:"p"+Date.now(),date:new Date().toISOString().slice(0,10),receipt:"REC-"+Date.now(),...p})}};

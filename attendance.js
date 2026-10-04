@@ -1,0 +1,1 @@
+window.Attendance={stats(data,mat){const a=data.attendance.filter(x=>x.student===mat);return{abs:a.filter(x=>x.status==='A').length,late:a.filter(x=>x.status==='R').length}};
